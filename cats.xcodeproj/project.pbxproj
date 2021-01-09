@@ -14,6 +14,13 @@
 		411E536C25A605580025A146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411E536B25A605580025A146 /* Assets.xcassets */; };
 		411E536F25A605580025A146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411E536D25A605580025A146 /* LaunchScreen.storyboard */; };
 		411E537B25A6065A0025A146 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E537A25A6065A0025A146 /* Breed.swift */; };
+		411E538725A759A60025A146 /* BreedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E538525A759A60025A146 /* BreedCollectionViewCell.swift */; };
+		411E538825A759A60025A146 /* BreedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 411E538625A759A60025A146 /* BreedCollectionViewCell.xib */; };
+		411E538B25A75D250025A146 /* BreedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E538A25A75D250025A146 /* BreedListViewController.swift */; };
+		411E538E25A7CD860025A146 /* GenericWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E538D25A7CD860025A146 /* GenericWorker.swift */; };
+		411E539225A7CDBE0025A146 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E539125A7CDBE0025A146 /* ErrorHandler.swift */; };
+		411E539525A7CE890025A146 /* BreedListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E539425A7CE890025A146 /* BreedListWorker.swift */; };
+		411E539825A91F260025A146 /* BreedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E539725A91F250025A146 /* BreedService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		411E536E25A605580025A146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		411E537025A605580025A146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		411E537A25A6065A0025A146 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		411E538525A759A60025A146 /* BreedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedCollectionViewCell.swift; sourceTree = "<group>"; };
+		411E538625A759A60025A146 /* BreedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreedCollectionViewCell.xib; sourceTree = "<group>"; };
+		411E538A25A75D250025A146 /* BreedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListViewController.swift; sourceTree = "<group>"; };
+		411E538D25A7CD860025A146 /* GenericWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWorker.swift; sourceTree = "<group>"; };
+		411E539125A7CDBE0025A146 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		411E539425A7CE890025A146 /* BreedListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListWorker.swift; sourceTree = "<group>"; };
+		411E539725A91F250025A146 /* BreedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				411E537A25A6065A0025A146 /* Breed.swift */,
+				411E539725A91F250025A146 /* BreedService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,6 +97,9 @@
 		411E537825A606260025A146 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				411E538525A759A60025A146 /* BreedCollectionViewCell.swift */,
+				411E538625A759A60025A146 /* BreedCollectionViewCell.xib */,
+				411E538A25A75D250025A146 /* BreedListViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +114,9 @@
 		411E538125A750ED0025A146 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				411E538D25A7CD860025A146 /* GenericWorker.swift */,
+				411E539125A7CDBE0025A146 /* ErrorHandler.swift */,
+				411E539425A7CE890025A146 /* BreedListWorker.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -168,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				411E536F25A605580025A146 /* LaunchScreen.storyboard in Resources */,
+				411E538825A759A60025A146 /* BreedCollectionViewCell.xib in Resources */,
 				411E536C25A605580025A146 /* Assets.xcassets in Resources */,
 				411E536A25A605550025A146 /* Main.storyboard in Resources */,
 			);
@@ -180,10 +202,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411E539525A7CE890025A146 /* BreedListWorker.swift in Sources */,
+				411E538E25A7CD860025A146 /* GenericWorker.swift in Sources */,
 				411E537B25A6065A0025A146 /* Breed.swift in Sources */,
 				411E536725A605550025A146 /* ViewController.swift in Sources */,
 				411E536325A605550025A146 /* AppDelegate.swift in Sources */,
+				411E538725A759A60025A146 /* BreedCollectionViewCell.swift in Sources */,
+				411E539225A7CDBE0025A146 /* ErrorHandler.swift in Sources */,
 				411E536525A605550025A146 /* SceneDelegate.swift in Sources */,
+				411E539825A91F260025A146 /* BreedService.swift in Sources */,
+				411E538B25A75D250025A146 /* BreedListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
